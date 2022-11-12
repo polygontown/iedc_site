@@ -1,0 +1,148 @@
+.homediv{
+    color: white;
+    --h1-load-time: 1s;
+    --h1-delay:0s;
+    --ilogo-load-time: 1s;
+    --clogo-load-time: calc(var(--ilogo-load-time)  +var(--h1-delay));
+    --caption-delay: calc(var(--h1-load-time) + var(--h1-delay));
+}
+#iedclogo{
+    width: 10%;
+    height: 10%;
+    padding-right: 2%;
+    animation: scrollDown var(--ilogo-load-time) ease-in var(--h1-delay) 1;
+}
+#ceclogo{
+    width: 10%;
+    height: 100%;
+    opacity: 0;
+    animation: scrollDown var(--ilogo-load-time) ease-in var(--ilogo-load-time) 1;
+    animation-fill-mode: forwards;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10.6vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -2%;
+    animation: scrollDown var(--h1-load-time) ease-in var(--h1-delay) 1;
+    animation-fill-mode: forwards;
+    
+}
+#cecO{
+    color: aqua;
+}
+#captio{
+    font-family: monospace;
+    margin: 0;
+    margin-top: -2%;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    border-bottom: 1px solid aqua;
+    width: fit-content;
+    opacity: 0;
+    animation: scrollDown var(--h1-load-time) ease-in var(--caption-delay
+    ) 1;
+    animation-fill-mode: forwards;
+}
+.nameH{
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: fit-content;
+    justify-content: center;
+    
+}
+.socialIcons{
+    text-align: center;
+    justify-content: center;
+    animation: scrollDown var(--h1-load-time) ease-in calc(var(--caption-delay) + var(--h1-load-time)) 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes scrollDown {
+    0%{
+        opacity: 0;
+        scale: 0;
+        translate: 0px;
+
+    }
+    50%
+    {
+        scale: 1.2;
+        opacity: 100%;
+        translate: 50px;
+    }
+    100%
+    {
+        scale: 1;
+        opacity: 100%;
+        translate: 0px;
+    }
+    
+}
+.homeS{
+    color: white;
+}
+.containerHomeSecond h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    margin: 0;
+    width: 40%;
+    animation: scrollDown var(--h1-load-time) ease-in var(--h1-delay) 1;
+    animation-fill-mode: forwards;
+}
+.Para1{
+    width: 50%;
+    height: 50%;
+}
+.Para1 p {
+    font-size: 2.5vh;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+.paraAbox{
+    display: flex;
+
+}
+.box1{
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.box2{
+    background-color: rgb(0, 43, 43);
+    width: 25vw;
+    height: 25vh;
+    margin: 20px;
+    margin-left: 30px;
+    display: flexbox;
+    flex-direction: column;
+}
+.box2in{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+    float: right;
+}
+#applyBtn{
+    background-color: white;
+    color: transparent;
+    margin-top: 15px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: fit-content;
+}

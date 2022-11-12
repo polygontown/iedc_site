@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: end;
+    position: fixed;
+    padding: 10px;
+    animation: scrollDown 1s ease-in 0s 1;
+}
+.navbar ul{
+    margin : 0;
+    opacity: 1;
+    padding-right: 15px;;
+    display: flexbox;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar li{
+    opacity: 1;
+    font-size: 2vw; 
+
+    font-weight: bold;  
+    color: aqua;
+    display: inline-flex;
+    padding: 0px 10px 10px 10px;
+    
+}
+.navElements{
+    opacity: 1;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.navbar li:hover{
+    color: white;
+    animation: jumpUpDown 0.4s ease-in 0s infinite;
+}
+.active
+{
+    color: white;
+}
+@keyframes jumpUpDown {
+    from{
+        transform: translateY(0px);
+
+    }
+    to{
+        transform: translateY(3px);
+
+    }
+    
+}
